@@ -28,15 +28,9 @@ const connect = function () {
   return conn;
 };
 
-const handleUserInput = function () {
-  // your code here
-  if ( key === '\u0003' ) {
-    // ctrl-c ( end of text )
-    process.exit();
-  }  
-};
 
-module.exports = {connect, handleUserInput};
+
+module.exports = {connect};
 
 
 
