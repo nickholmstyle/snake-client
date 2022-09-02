@@ -1,4 +1,5 @@
 const { stdin } = require("process");
+const { MOVE_KEY_UP } = require("./constants");
 
 // const net = require("net");
 let connection;
@@ -21,7 +22,7 @@ const handleUserInput = function (key) {
     process.exit();
   } else if ( key === 'w') {
     console.log('Move: up');
-    connection.write('Move: up')
+    MOVE_KEY_UP;
   } else if ( key === 'd') {
     console.log('Move: right');
     connection.write('Move: right')
